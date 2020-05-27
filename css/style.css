@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body,header,h1,ul {
@@ -14,15 +15,14 @@ ul li {
 .header {
     color: #fff;
     background-color: #1B1310;
-    font-family: 'Roboto', sans-serif;
-    height: 75px;
+    margin-bottom: 100px;
 }
 
 .header_bg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 75px;
+    height: 75px;
     border-bottom: 1px solid #fff;
     padding: 0 120px;
 }
@@ -46,7 +46,8 @@ ul li {
     background-image: url(../img/fv-bgi@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    background-position: center bottom;
+    height: 90vh;
     position: relative;
 }
 
@@ -58,5 +59,55 @@ ul li {
     font-size: 5rem;
     border: 1px solid #fff;
     font-weight: bold;
-    padding: 30px;
+    padding: 35px 42px;
+}
+
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.contents_title {
+    font-size: 3.6rem;
+    color: #141414;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about {
+    margin-bottom: 150px;
+}
+
+.sub_title {
+    font-size: 2.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.text {
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.service_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.service_text {
+    padding-left: 70px;
+}
+
+.service_text2 {
+    padding-right: 70px;
+}
+
+.service_contents:last-child {
+    margin-bottom: 0;
+}
+
+.service {
+    margin-bottom: 150px;
 }
