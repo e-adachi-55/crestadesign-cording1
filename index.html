@@ -10,14 +10,29 @@
 </head>
 <body>
     <header class="header">
-        <div class="header_bg">
-            <h1 class="site_title">クリ★スタ</h1>
+        <div class="header_bg" id="header">
+        <h1 class="site_title">クリ★スタ</h1>
+        <nav>
+        <div id="navi">
             <ul class="header_nav">
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
-                <li><a href="#news">Contents</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        </nav>
+    
+    <!-- ボタン部分ここを後で追加するだけ-->
+    <div class="nav_btn" id="nav_btn">
+      <span class="hamburger_line hamburger_line1"></span>
+      <span class="hamburger_line hamburger_line2"></span>
+      <span class="hamburger_line hamburger_line3"></span>
+    </div>
+    <div class="nav_bg" id="nav_bg"></div>
+    <!-- /ボタン部分ここを後で追加するだけ-->
+      
+    </div>
         <div class="header_fv">
             <div class="fv_img">
                 <p class="fv_title">Cresta Design.</p>
@@ -86,5 +101,30 @@
     <footer class="footer">
         <p>©︎crest.design all rights reserved</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        (function ($) {
+        
+        
+        /* ------------------------------- */
+        
+        })(jQuery);
+        
+        
+        /* SP menu */
+        function toggleNav() {
+        var body = document.body;
+        var hamburger = document.getElementById('nav_btn');
+        var blackBg = document.getElementById('nav_bg');
+        
+        hamburger.addEventListener('click', function() {
+            body.classList.toggle('nav_open'); //メニュークリックでnav-openというクラスがbodyに付与
+        });
+        blackBg.addEventListener('click', function() {
+            body.classList.remove('nav_open'); //もう一度クリックで解除
+        });
+        }
+        toggleNav();
+    </script>   
 </body>
 </html>
